@@ -69,8 +69,7 @@ class RSA
 	encrypted_string
    end
    
-   def decrypt message
-      #decrypts the message passed. The message is of type string. Decrypts each symbol of this string Encrypts each symbol of this string by using its ASCII number representationand returns the decrypted message. 
+   def decrypt message 
 	str = String.new	
 	message.split(' ').each do |ch|
 		m = (ch.to_i**d)%n
